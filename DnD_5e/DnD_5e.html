@@ -1121,7 +1121,7 @@
 		</div>
 		<div class="sheet-col-1-12 sheet-padr" title="The magic bonus will be added as a bonus to BOTH the attack and damage rolls"><input type="number" name="attr_meleemagic1" value="0" step="1"></div>
 		<div class="sheet-col-1-24"><input type="number" name="attr_meleetohit1" value="@{meleeattackstat1} + @{pbmelee1} + @{meleemagic1}" disabled="disabled"></div>
-		<div class="sheet-col-1-12 sheet-center"><button type="roll" class="sheet-roll" name="roll_MeleeAttack1" value="/em uses @{meleeweaponname1} to attack\n\n[[1d20 + @{meleetohit1} [To Hit] + @{global_melee_attack_bonus} [Active Melee Attack Bonus] ]] | [[1d20 + @{meleetohit1} [To Hit] + @{global_melee_attack_bonus} [Active Melee Attack Bonus] ]] vs AC" >Attack</button></div>
+		<div class="sheet-col-1-12 sheet-center"><button type="roll" class="sheet-roll" name="roll_MeleeAttack1" value="/em uses @{meleeweaponname1} to attack @{target|token_name}\n\n[[1d20 + @{meleetohit1} [To Hit] + @{global_melee_attack_bonus} [Active Melee Attack Bonus] ]] | [[1d20 + @{meleetohit1} [To Hit] + @{global_melee_attack_bonus} [Active Melee Attack Bonus] ]] vs AC" >Attack</button></div>
 		<div class="sheet-col-1-12" title="Only enter the base damage roll here without any bonuses from stats or other sources"><input class="sheet-center" type="text" name="attr_meleedmg1"></div>
 		<div class="sheet-col-1-24"><input type="number" name="attr_meleedmgbonus1" value="(@{meleeattackstat1} * floor(@{meleeattackweilded1})) + @{meleemagic1}" disabled="disabled"></div>
 		<div class="sheet-col-1-8"><input type="text" name="attr_meleedmgtype1"></div>
@@ -6262,4 +6262,4 @@
 		<div class="sheet-col-1 sheet-small-label sheet-center">Sheet help - https://wiki.roll20.net/DnD5e_Character_Sheet</div>
 	</div>
 	
-</div>
+</div>
